@@ -22,3 +22,14 @@ The process is extremely simple.
 **NB - Give it time, can take a while to drop in**
 
 ![image](https://user-images.githubusercontent.com/130473605/235159127-c5551ddd-07b3-408e-baa7-ec45869b56ab.png)
+
+**NBNB - shell.go is FUD @ 28/04/2023**
+
+![image](https://user-images.githubusercontent.com/130473605/235163241-a43353c0-f538-4b6b-ad3e-4943631242ec.png)
+
+
+## Defender
+
+According to the Windows Documentation, Defender wont scan User-Level Mapped Shares i.e if you use `net use g: \\192.168.59.60\Go /USER:user Password!` it wont scan and therefore wont attempt to delete the files on the remote share. It can however pick a script up when attempting to execute. Network Shares are scanned. Just something to keep in mind. https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus?view=o365-worldwide
+
+![image](https://user-images.githubusercontent.com/130473605/235164338-683ff6a4-e68d-4b53-9d40-d1a274310c1f.png)
