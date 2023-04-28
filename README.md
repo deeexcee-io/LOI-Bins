@@ -8,7 +8,7 @@ More will be added as and when I have the time to research it.
 The process is extremely simple.
 
 1. Have a Windows Victim where you can run commands
-2. Have a Windows Attack Box with your Programming Environment of choice - Python and Go are the only ones I have tested so far
+2. Have a Windows Attack Box with your Programming Environment of choice - Python Java and Go are the only ones I have tested so far
 3. Have a Kali Box or NCat on your Windows Attack Box to catch the Reverse Shell
 4. Share the Folder where your Python/Go.exe Application is
 5. Have your Reverse Shell script also in the same folder
