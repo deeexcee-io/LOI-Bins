@@ -3,6 +3,8 @@
 
 This is my collection of ways to Execute Reverse Shells on a Victim Windows Host not using PowerShell or touching disk with an .exe.
 
+This is nothing ground breaking, but I havent seen this technique documented anyhwere. As long as you have the right environment installed on your Attacker Controlled Windows Device you can essentially run any code you wish in memory. 
+
 More will be added as and when I have the time to research it.
 
 Programming Languages Tested With
@@ -12,6 +14,7 @@ Programming Languages Tested With
 3. [PHP](#example-with-php)
 4. Python - See here https://github.com/deeexcee-io/Eazee-As-Py
 5. [Python Port Forward](#port-forward-example)
+6. [Python Interpreter in Memory](#python-interpreter-example)
 
 ## <a name="Go"></a>The process is extremely simple - Example with Go
 
@@ -83,3 +86,4 @@ You can now access the Internal HTTP Server on your attacking machine
 
 ![image](https://user-images.githubusercontent.com/130473605/235460235-828b6079-1920-4907-a91c-6d8461a0b86d.png)
 
+## <a name="PF"></a>Port Forward Example
