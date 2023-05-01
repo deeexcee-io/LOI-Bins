@@ -27,7 +27,8 @@ Now with this aproach we have AMSI and Defender/AV. Assuming our victim can reac
 
 This approach does that but what we can do is call the .exe of our programming language of choice and also pass it a script, both of which are stored on our attacker controlled SMB share. Defender still scans the scripts but by utilising **Go, Java, PHP etc** we have more flexibility to bypass static signatures.
 
-You can then also utilise these programming languages to carry out post exploitation in weird and wonderful ways.
+You can also utilise these programming languages to carry out post exploitation in weird and wonderful ways. Hell, just call python.exe from the rmeote share and drop straight into the [Interpreter](#python-interpreter-example). 
+
 
 ## <a name="Go"></a>The process is extremely simple - Example with Go
 
