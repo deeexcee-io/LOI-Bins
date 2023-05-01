@@ -16,7 +16,7 @@ Programming Languages Tested With
 
 Post exploitation Techniques
 
-1. [Python Port Forward](#port-forward-example)
+1. [Python Port Forward - No SSH](#port-forward-example)
 2. [Python Interpreter in Memory](#python-interpreter-example)
 
 ## Set the Scene
@@ -81,7 +81,8 @@ Catch Shell in Kali
 
 ## Post Exploitation
 
-In this example I have a HTTP Server listening on localhost (My Nessus Server in this case port 8834)
+In this example you have a HTTP Server listening on localhost and want to exploit it (My Nessus Server in this case port 8834)
+
 
 ![image](https://user-images.githubusercontent.com/130473605/235459846-d72eb2f6-b35a-49f7-9ea4-faf5e8ef3a03.png)
 
@@ -90,7 +91,7 @@ Point to remote share and port forward script telling the host to listen on port
 
 ![image](https://user-images.githubusercontent.com/130473605/235459541-ddb4806d-4ab0-41e4-8886-63ec8c2f2791.png)
 
-You can now access the Internal HTTP Server on your attacking machine
+This opens up an external port which you can then browse to. You can now access the Internal HTTP Server on your attacking machine. 
 
 ![image](https://user-images.githubusercontent.com/130473605/235460235-828b6079-1920-4907-a91c-6d8461a0b86d.png)
 
