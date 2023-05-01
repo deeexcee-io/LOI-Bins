@@ -1,7 +1,7 @@
 # One-Shot-Shellz
 ## Abusing Remote Windows SMB Shares to Get Reverse Shells In ~~Any~~ Some Programming Languages
 
-This is my collection of ways to Execute Reverse Shells on a Victim Windows Host not using PowerShell or touching disk with an .exe.
+This is my collection of ways to Execute Code in a number of different Programming Languages on a Victim Windows Host which doesnt have the environment installed.
 
 This is nothing ground breaking, but I havent seen this technique documented anywhere. As long as you have the right environment installed on your Attacker Controlled Windows Device you can essentially run any code you wish in memory. 
 
@@ -94,4 +94,6 @@ You can now access the Internal HTTP Server on your attacking machine
 Its as simple as pointing to a remote share which then loads python into memory. 
 
 ![image](https://user-images.githubusercontent.com/130473605/235461798-2cc3bada-d39e-48f7-82d1-d6a207d600ae.png)
+
+![image](https://user-images.githubusercontent.com/130473605/235464000-614a31d4-8847-413f-8a21-15826483bbbf.png)
 
