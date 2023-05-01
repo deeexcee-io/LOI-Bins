@@ -9,7 +9,8 @@ Programming Languages Tested With
 
 1. [Go](#Go)
 2. [Java](#example-with-java)
-
+3. [PHP](#example-with-php)
+4. [Python Port Forward](#port-forward-example)
 
 ## <a name="Go"></a>The process is extremely simple - Example with Go
 
@@ -52,4 +53,32 @@ According to the Windows Documentation, Defender wont scan User-Level Mapped Sha
 5. Enjoy a Java Reverse Shell from a Windows Host that doesnt have Java Installed
 
 ![image](https://user-images.githubusercontent.com/130473605/235176177-20c77e58-0a72-49e4-8036-317389f6591d.png)
+
+## <a name="PHP"></a>Example with PHP
+
+Same as above. Install PHP on Windows and call the php.exe application and reverse shell script.
+
+![image](https://user-images.githubusercontent.com/130473605/235460758-c8660755-0280-4eac-a53a-4a73e0d0dfb3.png)
+
+Catch Shell in Kali
+
+![image](https://user-images.githubusercontent.com/130473605/235460817-62909b39-33fc-4e5c-9de9-17e057bec08a.png)
+
+
+## <a name="PF"></a>Port Forward Example
+
+## Post Exploitation
+
+In this example I have a HTTP Server listening on localhost (My Nessus Server in this case port 8834)
+
+![image](https://user-images.githubusercontent.com/130473605/235459846-d72eb2f6-b35a-49f7-9ea4-faf5e8ef3a03.png)
+
+
+Point to remote share and port forward script telling the host to listen on port 22222 and forward any traffic to 127.0.0.1:8834 (nessus)
+
+![image](https://user-images.githubusercontent.com/130473605/235459541-ddb4806d-4ab0-41e4-8886-63ec8c2f2791.png)
+
+You can now access the Internal HTTP Server on your attacking machine
+
+![image](https://user-images.githubusercontent.com/130473605/235460235-828b6079-1920-4907-a91c-6d8461a0b86d.png)
 
