@@ -1,4 +1,4 @@
-# LOI Bins (Living off the Island) - A remote SMB Island in the middle of nowhere
+# LOI Bins (Living off the Island Binaries) - A remote SMB Island in the middle of nowhere
 ## Abusing Remote Windows SMB Shares to Get Reverse Shells In ~~Any~~ Some Programming Languages
 
 This is my collection of ways to Execute Code in a number of different Programming Languages on a Victim Windows Host which doesnt have the environment installed.
