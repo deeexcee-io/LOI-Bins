@@ -10,7 +10,8 @@ Programming Languages Tested With
 1. [Go](#Go)
 2. [Java](#example-with-java)
 3. [PHP](#example-with-php)
-4. [Python Port Forward](#port-forward-example)
+4. Python - See here https://github.com/deeexcee-io/Eazee-As-Py
+5. [Python Port Forward](#port-forward-example)
 
 ## <a name="Go"></a>The process is extremely simple - Example with Go
 
