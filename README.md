@@ -86,4 +86,9 @@ You can now access the Internal HTTP Server on your attacking machine
 
 ![image](https://user-images.githubusercontent.com/130473605/235460235-828b6079-1920-4907-a91c-6d8461a0b86d.png)
 
-## <a name="PF"></a>Port Forward Example
+## <a name="PF"></a>Python Interpreter Example
+
+Its as simple as pointing to a remote share which then loads python into memory. 
+
+![image](https://user-images.githubusercontent.com/130473605/235461798-2cc3bada-d39e-48f7-82d1-d6a207d600ae.png)
+
