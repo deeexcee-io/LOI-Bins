@@ -1,4 +1,4 @@
-# One-Shot-Shellz
+# LOI Bins (Living off the Island) - A remote SMB Island in the middle of nowhere
 ## Abusing Remote Windows SMB Shares to Get Reverse Shells In ~~Any~~ Some Programming Languages
 
 This is my collection of ways to Execute Code in a number of different Programming Languages on a Victim Windows Host which doesnt have the environment installed.
@@ -18,6 +18,16 @@ Post exploitation Techniques
 
 1. [Python Port Forward](#port-forward-example)
 2. [Python Interpreter in Memory](#python-interpreter-example)
+
+## Set the Scene
+
+Lets say you have command execution on a host, your going to want to run a command to return a reverse shell. I would normally for something like powershell -c "......." 
+
+Now with this aproach we have AMSI and Defender/AV. Assuming our victim can reach out over SMB, it is possible to copy files and execute or just execute an .exe straight from the share.
+
+This approach does that but what we can do is call the .exe of our programming language of choice and also pass it a script, both of which are stored on our attacker controlled SMB share. Defender still scans the scripts but by utilising **Go, Java, PHP etc** we have more flexibility to bypass static signatures.
+
+You can then also utilise these programming languages to carry out post exploitation in weird and wonderful ways.
 
 ## <a name="Go"></a>The process is extremely simple - Example with Go
 
