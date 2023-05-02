@@ -1,6 +1,8 @@
 # LOI Bins (Living off the Island) Binaries - A remote SMB Island in the middle of nowhere
 ## Abusing Remote Windows SMB Shares to Get Reverse Shells In ~~Any~~ Some Programming Languages
 
+This repo is WIP (Work In Progress)
+
 This is some research and techniques of ways to Execute Code in a number of different Programming Languages on a Victim Windows Host which doesnt have the environment installed.
 
 This is nothing ground breaking, but I havent seen this technique documented anywhere. As long as you have the right environment installed on your Attacker Controlled Windows Device you can essentially run any code you wish in memory. 
