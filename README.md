@@ -5,7 +5,7 @@ This repo is WIP (Work In Progress)
 
 This is some research and techniques of ways to Execute Code in a number of different Programming Languages on a Victim Windows Host which doesnt have the environment installed.
 
-This is nothing ground breaking, but I havent seen this technique documented anywhere. As long as you have the right environment installed on your Attacker Controlled Windows Device you can essentially run any code you wish in memory. 
+This is nothing ground breaking, but I havent seen this technique documented anywhere. As long as you have the right environment installed on your Attacker Controlled Windows Device you can essentially run any code you wish in memory on the compromised machine. 
 
 More will be added as and when I have the time to research it.
 
