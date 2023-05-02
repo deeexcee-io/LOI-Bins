@@ -29,7 +29,7 @@ Now with this aproach we have AMSI and Defender/AV. Running something like this 
 
 This approach does the latter that but what we do is call the .exe of our programming language of choice and also pass it a script, both of which are stored on our attacker controlled SMB share. Defender still scans the scripts but by utilising **Go, Java, PHP etc** we have more flexibility to bypass static signatures. Testing with random un-obfuscated reverse shell scripts in these languages has proved successful.
 
-You can also utilise these programming languages to carry out post exploitation in weird and wonderful ways. You could even just call python.exe from the remote share and drop straight into the [Interpreter](#python-interpreter-example). 
+You can also utilise these programming languages to carry out post exploitation in weird and wonderful ways. You could even just call python.exe from the remote share and drop straight into the [Interpreter](#python-interpreter-example) loaded from the SMB share straight into memory.
 
 The process is extremely simple.
 
