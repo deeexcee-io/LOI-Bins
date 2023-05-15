@@ -1,5 +1,5 @@
 # LOI Bins (Living off the Island) Binaries - A remote SMB Island in the middle of nowhere
-## Abusing Remote Windows SMB Shares to Get Reverse Shells In ~~Any~~ Some Programming Languages
+## Abusing Remote Windows SMB Shares to Get Reverse Shells, Execute Code and Dump LSASS the easy way
 
 This repo is WIP (Work In Progress)
 
@@ -20,6 +20,7 @@ Post exploitation Techniques
 
 1. [Python Port Forward - No SSH](#port-forward-example)
 2. [Python Interpreter in Memory](#python-interpreter-example)
+3. [LSASS Dump the Easy Way](#LSASS-Dump)
 
 ## Set the Scene
 
@@ -107,3 +108,4 @@ Its as simple as pointing to a remote share which then loads python into memory.
 
 ![image](https://user-images.githubusercontent.com/130473605/235464000-614a31d4-8847-413f-8a21-15826483bbbf.png)
 
+## <a name="LSASS-Dump"></a>LSASS Dump
